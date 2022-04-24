@@ -1,0 +1,30 @@
+name: "Lana"
+email: lana.fyi@outlook.com
+description: "Lana's Portfolio"
+url: 'https://lana.fyi'
+
+images:
+    - portrait.jpg
+    - body.jpg 
+    - swimsuit.jpg 
+    - style.jpg      
+    - fashion.jpg 
+    - smile.jpg   
+    - accessories.jpg               
+    - dance.jpg 
+    - commercial.jpg
+    - sensual.jpg        
+    - dreamy.jpg
+    - close-up.jpg 
+
+
+source: ./src
+destination: ./_site
+
+social:
+    instagram: https://www.instagram.com/lana.fyi/
+
+sass:
+    style: :compressed
+    sass_dir: css
+

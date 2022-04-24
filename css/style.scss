@@ -1,0 +1,151 @@
+---
+---
+
+$link-color: cyan;
+$font-color: #3a3a3a;
+
+/*** Typography ***/
+$nav-font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+$heading-font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI";
+$subheading-font: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto;
+
+body {
+  font-family: $nav-font;
+}
+
+a {
+  color: $link-color;
+}
+
+/*** Nav ***/
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar .navbar-brand {
+  color: $font-color;
+  font-family: $nav-font;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.0325em;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar .navbar-brand img {
+  height: 1.5rem;
+}
+
+.navbar .navbar-tagline {
+  display: block;
+  color: lighten($font-color, 10%);
+}
+
+.navbar .navbar-tagline strong {
+  font-weight: bold;
+}
+
+.navbar .navbar-toggler {
+  padding: 0.75rem;
+  font-family: $nav-font;
+  font-size: 0.75rem;
+  color: $font-color;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar a {
+    color: $font-color;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .nav-item {
+  padding-left: 1rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: $link-color;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+  }
+}
+
+/*** Hero ***/
+
+.hero {
+  margin-top: 50px;
+}
+
+/*** Photo carousel ***/
+
+.photo {
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: lighten($font-color, 15%);
+  padding: 5em 2.5em;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+/*** Icons ***/
+
+.fa-brands {
+  font-style: normal;
+  font-size: 1.5rem;
+  color: $font-color;
+}
+
+.fa-solid {
+  margin-top: 2px;
+  font-style: normal;
+  font-size: 1.35rem;
+  color: $font-color;
+}
+
+/*** Footer ***/
+
+footer {
+  color: lighten($font-color, 35%);
+  padding-top: 75px;
+}
+
+footer .footer-cr {
+  cursor: default;
+}

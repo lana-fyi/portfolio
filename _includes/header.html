@@ -1,0 +1,23 @@
+<!-- Header -->
+<header class="hero">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for img in site.images %}
+
+      <div class="swiper-slide">
+        <img src="/img/{{ img }}" class="d-block photo w-100" alt="..." />
+      </div>
+
+      {% endfor %}
+    </div>
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</header>

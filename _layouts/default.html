@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% if page.title %} {{ page.title }} {% else %} {{ site.name }} &mdash; {{
+      site.description }} {% endif %}
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+    <link href="{{ site.base }}/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    {% include nav.html %} {% include header.html %}
+
+    <div class="content">{{ content }}</div>
+
+    {% include footer.html %} {% include scripts.html %}
+  </body>
+</html>
