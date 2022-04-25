@@ -18,6 +18,14 @@ a {
   color: $link-color;
 }
 
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
 /*** Nav ***/
 
 .navbar {
@@ -126,6 +134,21 @@ a {
 @media (max-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
+    display: none;
+  }
+
+  .mobile-nav-indicator {
+    display: inline-block;
+  }
+  
+  .mobile-nav-indicator .fa-solid {
+    color: #3a3a3a40;
+    user-select: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-indicator {
     display: none;
   }
 }
