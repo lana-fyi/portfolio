@@ -92,6 +92,7 @@ a {
   .navbar {
     padding-left: 1.5rem;
     padding-right: 3rem;
+    padding-bottom: 0rem;
   }
 }
 
@@ -103,7 +104,7 @@ a {
 
 @media (max-width: 768px) {
   .hero {
-    margin-top: 5px;
+    margin-top: 0px;
   }
 }
 
