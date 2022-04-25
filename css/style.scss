@@ -74,9 +74,9 @@ a {
 }
 
 .navbar a {
-    color: $font-color;
-    cursor: pointer;
-    text-decoration: none;
+  color: $font-color;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .navbar .nav-item {
@@ -91,8 +91,12 @@ a {
 @media (max-width: 768px) {
   .navbar {
     padding-left: 1.5rem;
-    padding-right: 3rem;
-    padding-bottom: 0rem;
+    padding-right: 2rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .navbar .nav-item {
+    padding-left: 1.5rem;
   }
 }
 
@@ -141,7 +145,7 @@ a {
   .mobile-nav-indicator {
     display: inline-block;
   }
-  
+
   .mobile-nav-indicator .fa-solid {
     color: #3a3a3a40;
     user-select: none;
